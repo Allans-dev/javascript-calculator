@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js"></script>
+  <title> calculator </title>
+</header>
+<body>
+
+  <div id="cal">
+    <div id="display">
+      <div id="history">
+      </div><!--history-->
+      <div id="log">
+      </div><!--log-->
+    </div><!--display-->
+    <div class="row">
+          <button class="btn btn-default" onclick="clearFunction()">  C </button>
+          <button class="btn btn-default" onclick="clearHistoryFunction()"> CH </button>
+          <button class="btn btn-default" onclick="backgroundFunction()"> B </button>
+          <button class="btn btn-default" onclick="delFunction()"> DEL </button>
+    </div><!--row 1-->
+    <div class="row">
+          <button class="btn btn-default" onclick="sevenFunction()"> 7 </button>
+          <button class="btn btn-default" onclick="eightFunction()"> 8 </button>
+          <button class="btn btn-default" onclick="nineFunction()"> 9 </button>
+          <button class="btn btn-default" onclick="divideFunction()"> / </button>
+    </div><!--row 2-->
+    <div class="row">
+          <button class="btn btn-default" onclick="fourFunction()"> 4 </button>
+          <button class="btn btn-default" onclick="fiveFunction()"> 5 </button>
+          <button class="btn btn-default" onclick="sixFunction()"> 6 </button>
+          <button class="btn btn-default" onclick="multiplyFunction()"> X </button>
+    </div><!--row 3-->
+    <div class="row">
+          <button class="btn btn-default" onclick="oneFunction()"> 1 </button>
+          <button class="btn btn-default" onclick="twoFunction()"> 2 </button>
+          <button class="btn btn-default" onclick="threeFunction()"> 3 </button>
+          <button class="btn btn-default" onclick="minusFunction()"> - </button>
+    </div><!--row 4-->
+    <div class="row">
+          <button class="btn btn-default" onclick="zeroFunction()"> 0 </button>
+          <button class="btn btn-default" onclick="decimalFunction()"> . </button>
+          <button class="btn btn-default" onclick="equalsFunction()"> = </button>
+          <button class="btn btn-default" onclick="plusFunction()"> + </button>
+    </div><!--row 5-->
+  </div><!--cal-->
+
+</body>
+</html>
