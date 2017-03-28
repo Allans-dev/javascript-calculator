@@ -159,6 +159,10 @@ function decimalFunction(){
 }
 function plusFunction(){
  if (string.length <12){
+   if (string == ""){
+     arr.push(val);
+     string += val
+   }
   string += "+";
   display();
   if (digits.length > 0){
@@ -170,6 +174,10 @@ function plusFunction(){
 }
 function minusFunction(){
  if (string.length <12){
+   if (string == ""){
+     arr.push(val);
+     string += val
+   }
   string += "-";
   display();
   if (digits.length > 0){
@@ -181,6 +189,10 @@ function minusFunction(){
 }
 function multiplyFunction(){
  if (string.length <12){
+   if (string == ""){
+     arr.push(val);
+     string += val
+   }
   string += "x";
   display();
   if (digits.length > 0){
@@ -192,6 +204,10 @@ function multiplyFunction(){
 }
 function divideFunction(){
  if (string.length <12){
+   if (string == ""){
+     arr.push(val);
+     string += val
+   }
   string += "/";
   display();
   if (digits.length > 0){
@@ -248,14 +264,9 @@ val = val.toPrecision(12)
  //display equals values
  document.getElementById('log').innerHTML = val;
  document.getElementById('history').innerHTML = string;
- console.log(digits);
- console.log(arr);
- console.log(operator);
- console.log(numbers);
- console.log(order);
+
  //clear
  string = "";
- val = 0;
  digits = "";
  arr = [];
  operator = [];
