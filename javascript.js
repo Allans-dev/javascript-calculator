@@ -19,6 +19,7 @@ var order = []
 var numbers = []
 var val = 0
 var background = 0
+var neg = 0
 
 //display function
 function display () {
@@ -194,30 +195,25 @@ function divideFunction () {
 
 // changing to negative function
 function negative () {
-    var neg = 0;
     let valStr = digits.charAt(0)
-    console.log(digits)
-    console.log(valStr)
     let subIndex = string.lastIndexOf(valStr)
-    console.log(subIndex)
     let subIndex2 = string.lastIndexOf(valStr) - 2
     let subStr = string.substring(subIndex)
-    let subStr2 = string.substring(subIndex2)
-    console.log(subIndex)
-    console.log(subStr)
+    let subStr2 = string.substring(subIndex, (string.length - 1))
+    console.log(subIndex2)
+    console.log(valStr)
 if (neg === 0) {
-  string = string.slice(subIndex)
+    string = string.slice(0, subIndex)
     string = string.concat('(-' + subStr + ')')
     display()
     neg = 1
-} else {
-  string = string.replace(subStr2, subStr)
+} else if (neg === 1) {
+  string = string.slice(0, subIndex2)
+  string = string.concat(subStr2)
   display()
   neg = 0
 }
-  
-  val = val * -1
-
+  digits = '-' + digits   
 }
 
 
@@ -275,4 +271,5 @@ if (val.toString().length > 12) {
  operator = []
  numbers = []
  order = []
+ neg = 0
 } //  equalsFunction
