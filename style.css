@@ -32,7 +32,9 @@ body{
   font-size: 40px;
   font-weight: 200;
 }
-.btn{
+.btn,
+.btn:visited,
+.btn:link{
   margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
